@@ -1,4 +1,4 @@
-<div class="nav">
+<div class="nav" [style.backgroundImage]="'url(' + background + ')'">
   <div class="nav_box1 flex justify-between">
     <div class="nav_title">
       <div class="logo-container flex items-center">
@@ -18,9 +18,10 @@
       </div>
     </div>
     <div class="nav_content  items-center">
-      <div class="item "><a [routerLink]="['Home']" routerLinkActive="router-link-active">Home</a></div>
+      <div class="item "><a [routerLink]="['Home/bgpic.jpg']" routerLinkActive="router-link-active">Home</a>
+      </div>
       <div class="item">
-        <a [routerLink]="['Rooms']" routerLinkActive="router-link-active">Rooms</a>
+        <a [routerLink]="['Rooms/product_nav_bg.jpg']" routerLinkActive="router-link-active">Rooms</a>
       </div>
       <div class="item ">About Us</div>
     </div>

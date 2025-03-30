@@ -8,11 +8,10 @@ const routes: Routes = [
     path:'',redirectTo:'Home',pathMatch:'full'
   },
   {
-    path:'Home',component:HomeComponent,
-
+    path:'Home/:bgImg',component:HomeComponent,
   },
   {
-    path:'Rooms',component:RoomsComponent,
+    path:'Rooms/:bgImg',component:RoomsComponent,
   }
 ];
 

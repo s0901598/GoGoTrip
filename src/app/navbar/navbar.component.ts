@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BackgroundImageServiceService } from '../share/service/background-image-service.service';
 
 @Component({
   selector: 'app-navbar',
@@ -7,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 [x: string]: any;
-
-  constructor() { }
+background = ''
+  constructor(private notifyService:BackgroundImageServiceService) { }
 
   ngOnInit(): void {
+    this.notifyService.subject.subscribe(x=>{
+      console.log('assets/'+x)
+      this.background = '/assets/'+x;
+    });
   }
 
 }
