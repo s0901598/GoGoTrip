@@ -1,0 +1,105 @@
+.nav {
+  width: 100%;
+  background: url("/assets/bgpic.jpg")no-repeat;
+  background-position: center center; /* 圖片居中 */
+  min-height: 100vh; /* 確保容器有足夠高度顯示圖片 */
+  background-size: 100% auto;
+
+}
+/* logo css */
+.logo-container {
+  gap: 10px;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  align-items: center;
+}
+.logo-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fe4332;
+}
+.logo-text{
+  font-family: "Dancing Script", cursive;
+}
+.nav_box1{
+
+  display: flex;
+  flex-wrap: wrap;
+width: 98%;
+margin: auto;
+padding-top: 20px;
+  justify-content: space-between;
+}
+.nav_end{
+  display: flex;
+}
+.content_two{
+  font-size: 40px;
+}
+
+.nav_box2{
+  padding: 20px;
+  padding-top: 40px;
+}
+
+.nav_box2>div{
+  padding-bottom: 40px;
+  line-height: 3em;
+}
+/* nav_content css */
+.nav_content{
+  align-items: right;
+  text-align: right;
+display: flex;
+}
+
+.item{
+  margin-left: 15px;
+  color:#353866;
+  font-size: 25px;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+}
+.item:hover{
+  cursor: pointer;
+  color: #fe4332;
+}
+
+
+.content_title{
+  font-family: "Roboto Condensed", sans-serif;
+  color:#F8FAFF;
+}
+.content_two{
+  color:#F8FAFF
+}
+.content_third{
+  width: 70%;
+  color: #F8FAFF;
+  font-size: 20px;
+  line-height: 1.5em;
+}
+.content_four>div{
+  max-width: 20%;
+  background-color: #F8FAFF;
+  text-align: center;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.content_four>div:hover{
+  background: #FF6F61;
+  color: #F8FAFF;
+  transition: all 0.3s ease-in-out;
+}
+
+
+a{
+  text-decoration: none;
+  color: #353866;
+}
+a:hover{
+  cursor: pointer;
+  color: #fe4332;
+  font-family: "Playfair Display", serif;
+}

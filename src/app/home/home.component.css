@@ -1,0 +1,106 @@
+.map_container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: #fffcf0;
+
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+}
+.map_title{
+  font-size: 40px;
+  padding: 40px;
+  color: #353866;
+}
+.map{
+  width: 80%;
+  margin: auto;
+  height: 400px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.facilitie_container{
+  width: 100%;
+  padding-top: 20px;
+
+}
+.facilitie_title{
+  text-align: center;
+  font-size: 40px;
+  padding: 40px;
+  color: #353866;
+  font-family: "Roboto Condensed", sans-serif;
+
+}
+.facilitie_content{
+  padding-top: 20px;
+  width: 45%;
+  margin: auto;
+  text-align: center;
+  color: #534847;
+}
+.facilitie_items{
+ padding-bottom: 20px;
+  padding-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.facilitie_item{
+  width: 25%;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.facilitie_item>i{
+  font-size: 50px;
+  color:#353866 ;
+}
+.facilitie_item>.facil_item_title{
+  font-size: 20px;
+  padding-top: 15px;
+}
+
+.special_box{
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+}
+.special_title{
+  font-size: 40px;
+  padding: 40px;
+  color: #353866;
+}
+.box_items{
+  width: 33%;
+  padding-left: 15px;
+}
+.box_item_img>img{
+  border-radius: 8px;
+  padding-bottom: 20px;
+}
+
+.box_item_title{
+  padding-bottom: 20px;
+  font-size: 20px;
+  color: #23699c;
+}
+.box_item_content{
+  width: 80%;
+  padding-bottom: 20px;
+  color: #3E4348;
+  font-weight: 200px;
+}
+
+/* 媒體查詢：小螢幕 */
+@media screen and (max-width: 960px) {
+  .nav {
+      width: 100%;
+      background: url("/assets/bgpic.jpg") no-repeat;
+      background-size:  auto 100%;
+      background-position: center center; /* 保持居中 */
+      min-height: 50vh; /* 根據需要調整高度 */
+  }
+}
