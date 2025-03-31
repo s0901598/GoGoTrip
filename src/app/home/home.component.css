@@ -96,7 +96,6 @@
   color: #23699c;
 }
 .box_item_content{
-  
   padding-bottom: 20px;
   color: #3E4348;
   font-weight: 200px;
@@ -120,5 +119,6 @@
   .box_content{
     width: 95%;
     margin: auto;
+    
   }
 }
