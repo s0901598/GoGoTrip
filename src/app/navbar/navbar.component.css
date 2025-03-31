@@ -22,12 +22,11 @@
   font-family: "Dancing Script", cursive;
 }
 .nav_box1{
-
   display: flex;
   flex-wrap: wrap;
-width: 98%;
-margin: auto;
-padding-top: 20px;
+  width: 98%;
+  margin: auto;
+  padding-top: 20px;
   justify-content: space-between;
 }
 .nav_end{
@@ -36,12 +35,10 @@ padding-top: 20px;
 .content_two{
   font-size: 40px;
 }
-
 .nav_box2{
-  padding: 20px;
-  padding-top: 40px;
+  width: 90%;
+  margin: auto;
 }
-
 .nav_box2>div{
   padding-bottom: 40px;
   line-height: 3em;

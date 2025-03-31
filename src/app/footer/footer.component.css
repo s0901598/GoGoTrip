@@ -11,6 +11,9 @@
   padding: 40px;
   color: #353866;
 }
+.info_down{
+  display: flex;
+}
 .info_box_big{
   width: 40%;
   padding: 15px;
@@ -19,6 +22,8 @@
 }
 .info_box_big>.info_box_icon{
 padding-left: 47px;
+padding-right: 15px;
+
 }
 .info_box_middle{
   width: 60%;
@@ -30,9 +35,10 @@ padding-left: 47px;
   width: 30%;
   padding-bottom: 40px;
 }
-.info_box_icon{
-  width: 20%;
+.info_box>.info_box_icon{
+  width: 10%;
   text-align: center;
+  padding-right: 15px;
 
 }
 .info_box_icon>i{

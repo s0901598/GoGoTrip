@@ -5,7 +5,7 @@ import { RoomsComponent } from './rooms/rooms.component';
 
 const routes: Routes = [
   {
-    path:'',redirectTo:'Home',pathMatch:'full'
+    path:'',redirectTo:'Home/bgpic.jpg',pathMatch:'full'
   },
   {
     path:'Home/:bgImg',component:HomeComponent,

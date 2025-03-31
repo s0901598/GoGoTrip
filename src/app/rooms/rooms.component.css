@@ -1,4 +1,9 @@
+.product_content_container{
+  width: 100%;
+}
 .content_container_title{
+  width: 70%;
+  margin: auto;
   display: flex;
   justify-content: center;
   padding-top: 20px;
@@ -8,20 +13,18 @@
 
 }
 .content_container_box{
+  width: 100%;
   margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
 }
 .content_box{
-
+  width: 40%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  width: 45%;
-  margin-right: 20px;
   border-radius: 5px;
   margin-bottom: 20px;
 }
@@ -29,6 +32,7 @@
   width: 100%;
 }
 .content_img>img{
+  max-width: 90%;
   border-radius: 4px;
   padding-bottom: 20px;
 }
