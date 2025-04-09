@@ -3,9 +3,11 @@
     Find a Perfect Family Budget Hotel in The Near of San Francisco Shoreline
   </div>
   <div class="content_container_box">
-    <div class="content_box">
+    <div class="content_box" *ngFor="let room of roomImages; let i = index">
       <div class="content_img">
-        <img src="/assets/room1.jpg" alt="">
+        <button class="arrow left-arrow" (click)="prevImage(i)">&lt;</button>
+        <img [src]="roomImages[i][currentImageIndices[i]]" alt="">
+        <button class="arrow right-arrow" (click)="nextImage(i)">&gt;</button>
       </div>
       <div class="item_detail">
         <div class="detail_title">
@@ -48,143 +50,7 @@
         </div>
       </div>
     </div>
-    <div class="content_box">
-      <div class="content_img">
-        <img src="/assets/room2.jpg" alt="">
-      </div>
-      <div class="item_detail">
-        <div class="detail_title">
-          Single Room
-        </div>
-        <div class="detail_statement">
-          Tempus mattis posuere urna condimentum metus leo adipiscing risus tristique lobortis gravida venenatis a
-          metus.
-        </div>
-        <div class="options_box">
-          <div class="detail_option_box">
-            <i class="fa-solid fa-bed"></i>
-            <div>
-              1 King bed
-            </div>
-          </div>
-          <div class="detail_option_box">
-            <i class="fa-solid fa-tv"></i>
-            <div>
-              Plasma TV
-            </div>
-          </div>
-          <div class="detail_option_box">
-            <i class="fa-solid fa-wifi"></i>
-            <div>
-              Free wi-fi
-            </div>
-          </div>
-          <div class="detail_option_box">
-            <i class="fa-solid fa-ban-smoking"></i>
-            <div>
-              Smoke-free
-            </div>
-          </div>
-        </div>
-        <div class="book">
-          <div class="bookbtn">
-            Book Now!
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="content_box">
-      <div class="content_img">
-        <img src="/assets/room3.jpg" alt="">
-      </div>
-      <div class="item_detail">
-        <div class="detail_title">
-          Single Room
-        </div>
-        <div class="detail_statement">
-          Tempus mattis posuere urna condimentum metus leo adipiscing risus tristique lobortis gravida venenatis a
-          metus.
-        </div>
-        <div class="options_box">
-          <div class="detail_option_box">
-            <i class="fa-solid fa-bed"></i>
-            <div>
-              1 King bed
-            </div>
-          </div>
-          <div class="detail_option_box">
-            <i class="fa-solid fa-tv"></i>
-            <div>
-              Plasma TV
-            </div>
-          </div>
-          <div class="detail_option_box">
-            <i class="fa-solid fa-wifi"></i>
-            <div>
-              Free wi-fi
-            </div>
-          </div>
-          <div class="detail_option_box">
-            <i class="fa-solid fa-ban-smoking"></i>
-            <div>
-              Smoke-free
-            </div>
-          </div>
-        </div>
-        <div class="book">
-          <div class="bookbtn">
-            Book Now!
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="content_box">
-      <div class="content_img">
-        <img src="/assets/room4.jpg" alt="">
-      </div>
-      <div class="item_detail">
-        <div class="detail_title">
-          Single Room
-        </div>
-        <div class="detail_statement">
-          Tempus mattis posuere urna condimentum metus leo adipiscing risus tristique lobortis gravida venenatis a
-          metus.
-        </div>
-        <div class="options_box">
-          <div class="detail_option_box">
-            <i class="fa-solid fa-bed"></i>
-            <div>
-              1 King bed
-            </div>
-          </div>
-          <div class="detail_option_box">
-            <i class="fa-solid fa-tv"></i>
-            <div>
-              Plasma TV
-            </div>
-          </div>
-          <div class="detail_option_box">
-            <i class="fa-solid fa-wifi"></i>
-            <div>
-              Free wi-fi
-            </div>
-          </div>
-          <div class="detail_option_box">
-            <i class="fa-solid fa-ban-smoking"></i>
-            <div>
-              Smoke-free
-            </div>
-          </div>
-
-
-        </div>
-        <div class="book">
-          <div class="bookbtn">
-            Book Now!
-          </div>
-        </div>
-      </div>
-    </div>
+    
 
 
   </div>

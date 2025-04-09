@@ -30,6 +30,7 @@
 }
 .content_img{
   width: 100%;
+  position: relative;
 }
 .content_img>img{
   max-width: 90%;
@@ -80,4 +81,32 @@
 .bookbtn:hover{
   color:#f4f4f4 ;
   transition: all 0.3s ease;
+}
+
+
+/* 箭頭按鈕樣式 */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+.left-arrow {
+  left: 2%;
+}
+
+.right-arrow {
+  right: 12%;
+}
+
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: background-color 0.3s ease;
 }
