@@ -1,0 +1,84 @@
+<div class="modal-overlay" (click)="closeModal()" *ngIf="isModalOpen"></div>
+<div class="modal-container" *ngIf="isModalOpen">
+  <button class="close-btn" (click)="closeModal()">×</button>
+
+  <!-- 左側圖片區域 -->
+  <div class="left-section">
+    <div class="left-content">
+      <div class="logo">LUXURY HOTEL</div>
+      <div class="welcome-text">歡迎來到我們的豪華飯店</div>
+      <div class="sub-text">
+        體驗五星級的奢華住宿服務<br>
+        享受無與倫比的舒適體驗
+      </div>
+    </div>
+  </div>
+
+  <!-- 右側表單區域 -->
+  <div class="right-section">
+    <div class="form-header">
+      <div class="form-tabs">
+        <div class="tab" [class.active]="currentTab === 'login'" (click)="setTab('login')">登入</div>
+        <div class="tab" [class.active]="currentTab === 'register'" (click)="setTab('register')">註冊</div>
+      </div>
+    </div>
+
+    <!-- 登入表單 -->
+    <div class="form-container login-form" [class.active]="currentTab === 'login'">
+      <form (ngSubmit)="submitLogin()" #loginForm="ngForm">
+        <div class="form-group">
+          <label for="login-email">電子信箱</label>
+          <input type="email" id="login-email" class="form-control" placeholder="請輸入您的電子信箱"
+            [(ngModel)]="loginFormData.email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="login-password">密碼</label>
+          <input type="password" id="login-password" class="form-control" placeholder="請輸入密碼"
+            [(ngModel)]="loginFormData.password" name="password" required>
+        </div>
+        <div class="checkbox-group">
+          <input type="checkbox" id="remember-me" [(ngModel)]="loginFormData.remember" name="remember">
+          <label for="remember-me">記住帳號</label>
+        </div>
+        <button type="submit" class="btn-primary">立即登入</button>
+        <div class="form-footer">
+          <a href="#" (click)="forgotPassword()">忘記密碼？</a>
+        </div>
+      </form>
+    </div>
+
+    <!-- 註冊表單 -->
+    <div class="form-container register-form" [class.active]="currentTab === 'register'">
+      <form (ngSubmit)="submitRegister()" #registerForm="ngForm">
+        <div class="form-group">
+          <label for="register-name">姓名</label>
+          <input type="text" id="register-name" class="form-control" placeholder="請輸入您的姓名"
+            [(ngModel)]="registerFormData.name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="register-email">電子信箱</label>
+          <input type="email" id="register-email" class="form-control" placeholder="請輸入電子信箱"
+            [(ngModel)]="registerFormData.email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="register-password">密碼</label>
+          <input type="password" id="register-password" class="form-control" placeholder="請設定密碼"
+            [(ngModel)]="registerFormData.password" name="password" required>
+        </div>
+        <div class="form-group">
+          <label for="confirm-password">確認密碼</label>
+          <input type="password" id="confirm-password" class="form-control" placeholder="請再次輸入密碼"
+            [(ngModel)]="registerFormData.confirmPassword" name="confirmPassword" required>
+        </div>
+        <div class="checkbox-group">
+          <input type="checkbox" id="agree-terms" [(ngModel)]="registerFormData.agreeTerms" name="agreeTerms" required>
+          <label for="agree-terms">我同意 <a href="#">服務條款</a> 和 <a href="#">隱私政策</a></label>
+        </div>
+        <button type="submit" class="btn-primary">立即註冊</button>
+        <div class="form-footer">
+          已有帳號？<a href="#" (click)="setTab('login')">立即登入</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -6,6 +6,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { RoomsComponent } from './rooms/rooms.component';
 import { FooterComponent } from './footer/footer.component';
+import { AuthComponent } from './auth/auth.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -13,11 +16,13 @@ import { FooterComponent } from './footer/footer.component';
     NavbarComponent,
     HomeComponent,
     RoomsComponent,
-    FooterComponent
+    FooterComponent,
+    AuthComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule, HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
