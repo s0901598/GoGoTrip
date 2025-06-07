@@ -4,6 +4,7 @@
   background-position: center center; /* 圖片居中 */
   min-height: 100vh; /* 確保容器有足夠高度顯示圖片 */
   background-size: 100% auto;
+  z-index: 1;
 
 }
 /* logo css */
