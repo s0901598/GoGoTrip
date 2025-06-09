@@ -22,17 +22,17 @@ export class AuthComponent {
     this.isModalOpen = true;
   }
 
-  closeModal() {
+  closeModal(event:MouseEvent) {
     this.isModalOpen = false;
+    this.currentTab='login';
+    event.stopPropagation(); // 防止事件傳播到 .modal-overlay
   }
 
-  setTab(tab: string) {
+  setTab(tab: string,event:MouseEvent) {
     this.currentTab = tab;
+    event.stopPropagation(); // 防止事件傳播到 .modal-overlay
   }
-  // 判斷是否為 '註冊' Tab
-  isRegisterTab(): boolean {
-    return this.currentTab === '註冊';
-  }
+  
 
   submitLogin() {
     if (!this.loginFormData.email || !this.loginFormData.password) {
