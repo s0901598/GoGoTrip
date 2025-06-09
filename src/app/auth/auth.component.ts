@@ -29,6 +29,10 @@ export class AuthComponent {
   setTab(tab: string) {
     this.currentTab = tab;
   }
+  // 判斷是否為 '註冊' Tab
+  isRegisterTab(): boolean {
+    return this.currentTab === '註冊';
+  }
 
   submitLogin() {
     if (!this.loginFormData.email || !this.loginFormData.password) {

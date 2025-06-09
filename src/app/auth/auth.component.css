@@ -9,8 +9,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-
 }
 
 .modal-container {
@@ -24,8 +22,11 @@
   display: flex;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
   animation: modalSlideIn 0.3s ease-out;
+  z-index: 100;
 }
-
+.register-height{
+  height: 60px; /* 註冊 Tab 的高度 */
+}
 @keyframes modalSlideIn {
   from {
       opacity: 0;
@@ -103,6 +104,8 @@
 .form-tabs {
   display: flex;
   margin-bottom: 30px;
+  height: 40px; /* 預設高度 */
+  transition: height 0.3s ease; /* 平滑過渡效果 */
   border-bottom: 1px solid #e9ecef;
 }
 
@@ -115,6 +118,7 @@
   color: #6c757d;
   border-bottom: 2px solid transparent;
   transition: all 0.3s ease;
+  background: white;
 }
 
 .tab.active {
